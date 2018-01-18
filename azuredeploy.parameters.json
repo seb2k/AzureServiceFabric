@@ -1,0 +1,36 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+  "parameters": {
+    "clusterName": {
+      "value": "asfgraefdev"
+    },
+    "clusterLocation": {
+      "value": "westeurope"
+    },
+    "adminUserName": {
+      "value": "Sebastian"
+    },
+    "adminPassword": {
+      "value": null
+    },
+    "virtualNetworkName": {
+      "value": "VNet-asfgraefdev"
+    },
+    "sourceVaultValue": {
+      "value": "/subscriptions/85a726d6-de59-4c9c-9d35-66b0369a5a42/resourceGroups/RGKeyVaultServiceFabricDev/providers/Microsoft.KeyVault/vaults/asfgraefdevkv"
+    },
+    "certificateUrlValue": {
+      "value": "https://asfgraefdevkv.vault.azure.net:443/secrets/ServiceFabricAuthentication/8fdede3e0730453f8d94ab8111e100f4"
+    },
+    "certificateThumbprint": {
+      "value": "48F84EED9C3BD00D1997E01E4698A31760852059"
+    },
+    "reverseProxyCertificateThumbprint": {
+      "value": "315DC62B732C862B18F673714BE42494A3B23941"
+    },
+    "reverseProxyCertificateUrlValue": {
+      "value": "https://asfgraefdevkv.vault.azure.net:443/secrets/ServiceFabricReverseProxy/cc80e0e915b24fb2990ab02a5e1935c6"
+    }
+  }
+}
