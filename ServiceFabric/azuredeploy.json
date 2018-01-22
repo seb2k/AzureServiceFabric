@@ -174,24 +174,12 @@
       "defaultValue": "win",
       "maxLength": 9,
       "metadata": {
-        "description": "Name of the VMSS"
+        "description": "Name of the VMSS" 
       }
     },
     "vmNodeType0Size": {
       "type": "string",
       "defaultValue": "Standard_D1_v2"
-    },
-    "aadTenantId": {
-      "type": "string",
-      "defaultValue": "x"
-    },
-    "aadClusterApplication": {
-      "type": "string",
-      "defaultValue": "x"
-    },
-    "aadClientApplication": {
-      "type": "string",
-      "defaultValue": "x"
     }
   },
   "variables": {
@@ -605,11 +593,6 @@
             "addonFeatures": [
               "DnsService"
             ],
-            "azureActiveDirectory": {
-              "clientApplication": "[parameters('aadClientApplication')]",
-              "clusterApplication": "[parameters('aadClusterApplication')]",
-              "tenantId": "[parameters('aadTenantId')]"
-            },
             "certificate": {
               "thumbprint": "[parameters('certificateThumbprint')]",
               "x509StoreName": "[parameters('certificateStoreValue')]"
