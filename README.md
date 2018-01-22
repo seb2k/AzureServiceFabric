@@ -8,4 +8,4 @@ Here are the steps for everybody who wants to kick up an Azure Service Fabric Cl
 
 3.	Deploy cluster using Azure Portal or an ARM template with the help of PowerShell. You can use psDeploy.ps1 for that. If you want to use an existing vNet, make sure the commited vNet has correct dns servers which access the server. An Azure Service Fabric Cluster needs internet access during the instance deployment.
 
-The New-AzureRmServiceFabricCluster.ps1 makes it more easier, you don't need a template for it, just execute and lean beack.
+The New-AzureRmServiceFabricCluster.ps1 makes it more easier, you don't need a template for it, just execute and lean back.
